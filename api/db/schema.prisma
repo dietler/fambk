@@ -28,13 +28,13 @@ model Parent {
 }
 
 model Child {
-  id          Int     @id @default(autoincrement())
-  family      Family  @relation(fields: [familyId], references: [id])
-  familyId    Int
-  firstName   String
-  relativeAge Int?
-  sex         Sex?
-  school      String?
+  id            Int     @id @default(autoincrement())
+  family        Family  @relation(fields: [familyId], references: [id])
+  familyId      Int
+  firstName     String
+  relativeGrade Int?
+  sex           Sex?
+  school        String?
 }
 
 enum Sex {
